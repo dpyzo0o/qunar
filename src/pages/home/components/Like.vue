@@ -24,41 +24,8 @@
 <script>
 export default {
   name: 'HomeLike',
-  data () {
-    return {
-      itemList: [
-        {
-          id: '0001',
-          imgURL: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: '故宫',
-          desc: '东城区'
-        },
-        {
-          id: '0002',
-          imgURL: 'http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg',
-          title: '八达岭长城',
-          desc: '延庆县'
-        },
-        {
-          id: '0003',
-          imgURL: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-          title: '北京野生动物园',
-          desc: '大兴区'
-        },
-        {
-          id: '0004',
-          imgURL: 'http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg',
-          title: '北京欢乐谷',
-          desc: '朝阳区'
-        },
-        {
-          id: '0005',
-          imgURL: 'http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_200x200_2cce447f.jpg',
-          title: '颐和园',
-          desc: '海淀区'
-        }
-      ]
-    }
+  props: {
+    itemList: Array
   }
 }
 </script>

@@ -1,0 +1,254 @@
+{
+  "ret": true,
+  "data": {
+    "city": "北京",
+    "swiperList": [
+      {
+        "id": "0001",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/14/21f410d1016c8702.jpg_640x200_84d0effe.jpg"
+      },
+      {
+        "id": "0002",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/5c/969bfa7af00a2702.jpg_640x200_e1b76963.jpg"
+      },
+      {
+        "id": "0003",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/2c/4a64ed2e384e0b02.jpg_640x200_da6dfd87.jpg"
+      },
+      {
+        "id": "0004",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/45/0ac34e31b4a1fb02.jpg_640x200_7b7e09c7.jpg"
+      },
+      {
+        "id": "0005",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/15/9250dbc86a456302.jpg_640x200_4c7220d4.jpg"
+      },
+      {
+        "id": "0006",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/b7/4d725b6395350b02.jpg_640x200_cb692cdc.jpg"
+      },
+      {
+        "id": "0007",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/ab/2d291e6cf2bc7f02.jpg_640x200_fa5f0167.jpg"
+      },
+      {
+        "id": "0008",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/f3/7d76e56716bad002.jpg_640x200_6c45b28a.jpg"
+      },
+      {
+        "id": "0009",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/e5/82b53c47166cfc02.jpg_640x200_92e29c58.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "0001",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "必游榜单"
+      },
+      {
+        "id": "0003",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+        "desc": "踏青赏花"
+      },
+      {
+        "id": "0004",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "0005",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "desc": "动植物园"
+      },
+      {
+        "id": "0006",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+        "desc": "故宫"
+      },
+      {
+        "id": "0007",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png",
+        "desc": "古水北镇"
+      },
+      {
+        "id": "0008",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/fa/fe1915e1d20bcc02.png",
+        "desc": "定制游"
+      },
+      {
+        "id": "0009",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "desc": "自然风光"
+      },
+      {
+        "id": "0010",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/dd/cce1231836f10a02.png",
+        "desc": "周边游"
+      },
+      {
+        "id": "0011",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png",
+        "desc": "演出"
+      },
+      {
+        "id": "0012",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
+        "desc": "自然风光"
+      },
+      {
+        "id": "0013",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+        "desc": "名胜古迹"
+      },
+      {
+        "id": "0014",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+        "desc": "城市风光"
+      },
+      {
+        "id": "0015",
+        "imgURL":
+          "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+        "desc": "游乐场"
+      }
+    ],
+    "likeList": [
+      {
+        "id": "0001",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
+        "title": "故宫",
+        "desc": "东城区"
+      },
+      {
+        "id": "0002",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_200x200_2458ffb2.jpg",
+        "title": "八达岭长城",
+        "desc": "延庆县"
+      },
+      {
+        "id": "0003",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg",
+        "title": "北京野生动物园",
+        "desc": "大兴区"
+      },
+      {
+        "id": "0004",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
+        "title": "北京欢乐谷",
+        "desc": "朝阳区"
+      },
+      {
+        "id": "0005",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_200x200_2cce447f.jpg",
+        "title": "颐和园",
+        "desc": "海淀区"
+      },
+      {
+        "id": "0006",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1803/7b/7b023b9728f0834fa3.img.jpg_200x200_5fddc1d8.jpg",
+        "title": "世界花卉大观园",
+        "desc": "丰台区"
+      },
+      {
+        "id": "0007",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_200x200_8e27de70.jpg",
+        "title": "天安门广场",
+        "desc": "东城区"
+      },
+      {
+        "id": "0008",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1505/f5/f5f45e1a83537bcb.water.jpg_200x200_444cc7e8.jpg",
+        "title": "圆明园",
+        "desc": "海淀区"
+      },
+      {
+        "id": "0009",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/201403/10/b892e5069c3508f7b017a91121502223.jpg_200x200_3d7db4ec.jpg",
+        "title": "古水北镇",
+        "desc": "密云县"
+      },
+      {
+        "id": "0010",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/p0/1608/4f/4fc3f5a1b838f279a3.water.jpg_200x200_e6528ef6.jpg",
+        "title": "北京杜莎夫人蜡像馆",
+        "desc": "前门大街"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "0001",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg",
+        "title": "北京赏花好地方",
+        "desc": "乱花渐欲迷人眼，京城赏花大搜索"
+      },
+      {
+        "id": "0002",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+        "title": "北京必游TOP10",
+        "desc": "来北京必去的景点非这些地方莫属"
+      },
+      {
+        "id": "0003",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+        "title": "寻找北京的皇城范",
+        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+      },
+      {
+        "id": "0004",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
+        "title": "学生最爱的博物馆",
+        "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+      },
+      {
+        "id": "0005",
+        "imgURL":
+          "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
+        "title": "儿童剧场，孩子的乐园",
+        "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+      }
+    ]
+  }
+}
