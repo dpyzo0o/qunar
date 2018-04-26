@@ -9,7 +9,6 @@
           <p class="icon-desc">{{item.desc}}</p>
         </div>
       </swiper-slide>
-      <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>
 </template>
@@ -19,11 +18,7 @@ export default {
   name: 'HomeIcons',
   data () {
     return {
-      swiperOption: {
-        pagination: {
-          el: '.swiper-pagination'
-        }
-      },
+      swiperOption: {},
       iconList: [
         {
           id: '0001',
