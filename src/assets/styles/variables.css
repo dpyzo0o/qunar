@@ -1,5 +1,8 @@
 /* CSS 全局变量 */
 :root {
   --bg-color: #00bcd4;
-  --dark-text-color: #333;
+  --dark-text-color: #212121;
+  --light-text-color: #616161;
+  --large-font-size: .32rem;
+  --small-font-size: .24rem;
 }
