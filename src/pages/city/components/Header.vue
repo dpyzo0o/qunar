@@ -19,7 +19,7 @@ export default {
   text-align: center;
   color: #fff;
   background: var(--bg-color);
-  font-size: .32rem;
+  font-size: var(--large-font-size);
 }
 
 .back-icon {
