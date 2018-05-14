@@ -34,7 +34,7 @@ export default {
 .tab {
   height: .4rem;
   line-height: .4rem;
-  padding: .2rem 1rem;
+  padding: 0 1rem .2rem;
   background: var(--bg-color);
   color: #fff;
 }
