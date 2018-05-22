@@ -1,8 +1,8 @@
 <template>
   <div class="tab">
     <ul>
-      <li :class="{ active: isDomestic}" @click="handleDomestic">境内</li>
-      <li :class="{ active: !isDomestic}" @click="handleForeign">境外·港澳台</li>
+      <li :class="{ active: isDomestic}" @click="setRegion('domestic')">境内</li>
+      <li :class="{ active: !isDomestic}" @click="setRegion('foreign')">境外·港澳台</li>
     </ul>
   </div>
 </template>
@@ -16,15 +16,8 @@ export default {
     }
   },
   methods: {
-    handleDomestic () {
-      if (!this.isDomestic) {
-        this.isDomestic = !this.isDomestic
-      }
-    },
-    handleForeign () {
-      if (this.isDomestic) {
-        this.isDomestic = !this.isDomestic
-      }
+    setRegion (region) {
+      this.isDomestic = region === 'domestic'
     }
   }
 }

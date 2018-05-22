@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .gap {
   height: .2rem;
-  background: #eee;
+  background: var(--bg-light-color);
 }
 
 .title {

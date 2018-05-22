@@ -31,7 +31,7 @@ export default {
   line-height: .8rem;
   color: var(--dark-text-color);
   text-indent: .26rem;
-  background: #eee;
+  background: var(--bg-light-color);
 }
 
 .item-info {
