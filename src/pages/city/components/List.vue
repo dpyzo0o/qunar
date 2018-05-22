@@ -1,114 +1,128 @@
 <template>
-  <div class="list">
-    <div class="section">
-      <div class="title">热门城市</div>
-      <ul class="item-list col-3">
-        <li>北京</li>
-        <li>上海</li>
-        <li>三亚</li>
-        <li>香港</li>
-        <li>杭州</li>
-        <li>广州</li>
-        <li>成都</li>
-        <li>深圳</li>
-        <li>武汉</li>
-        <li>桂林</li>
-        <li>西安</li>
-        <li>厦门</li>
-      </ul>
-    </div>
-    <div class="section">
-      <div class="title">字母排序</div>
-      <ul class="item-list col-6">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
-        <li>F</li>
-        <li>G</li>
-        <li>H</li>
-        <li>I</li>
-        <li>J</li>
-        <li>K</li>
-        <li>L</li>
-        <li>M</li>
-        <li>N</li>
-        <li>O</li>
-        <li>P</li>
-        <li>Q</li>
-        <li>R</li>
-        <li>S</li>
-        <li>T</li>
-        <li>U</li>
-        <li>V</li>
-        <li>W</li>
-        <li>X</li>
-        <li>Y</li>
-        <li>Z</li>
-      </ul>
-    </div>
-    <div class="section">
-      <div class="title">A</div>
-      <ul class="item-list col-4">
-        <li>北京</li>
-        <li>上海</li>
-        <li>三亚</li>
-        <li>香港</li>
-        <li>杭州</li>
-        <li>广州</li>
-        <li>成都</li>
-        <li>深圳</li>
-        <li>武汉</li>
-        <li>桂林</li>
-        <li>西安</li>
-        <li>厦门</li>
-      </ul>
-    </div>
-    <div class="section">
-      <div class="title">B</div>
-      <ul class="item-list col-4">
-        <li>北京</li>
-        <li>上海</li>
-        <li>三亚</li>
-        <li>香港</li>
-        <li>杭州</li>
-        <li>广州</li>
-        <li>成都</li>
-        <li>深圳</li>
-        <li>武汉</li>
-        <li>桂林</li>
-        <li>西安</li>
-        <li>厦门</li>
-      </ul>
-    </div>
-    <div class="section">
-      <div class="title">C</div>
-      <ul class="item-list col-4">
-        <li>北京</li>
-        <li>上海</li>
-        <li>三亚</li>
-        <li>香港</li>
-        <li>杭州</li>
-        <li>广州</li>
-        <li>成都</li>
-        <li>深圳</li>
-        <li>武汉</li>
-        <li>桂林</li>
-        <li>西安</li>
-        <li>厦门</li>
-      </ul>
+  <div class="list" ref="wrapper">
+    <div>
+      <div class="section">
+        <div class="title">热门城市</div>
+        <ul class="item-list col-3">
+          <li>北京</li>
+          <li>上海</li>
+          <li>三亚</li>
+          <li>香港</li>
+          <li>杭州</li>
+          <li>广州</li>
+          <li>成都</li>
+          <li>深圳</li>
+          <li>武汉</li>
+          <li>桂林</li>
+          <li>西安</li>
+          <li>厦门</li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="title">字母排序</div>
+        <ul class="item-list col-6">
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+          <li>E</li>
+          <li>F</li>
+          <li>G</li>
+          <li>H</li>
+          <li>I</li>
+          <li>J</li>
+          <li>K</li>
+          <li>L</li>
+          <li>M</li>
+          <li>N</li>
+          <li>O</li>
+          <li>P</li>
+          <li>Q</li>
+          <li>R</li>
+          <li>S</li>
+          <li>T</li>
+          <li>U</li>
+          <li>V</li>
+          <li>W</li>
+          <li>X</li>
+          <li>Y</li>
+          <li>Z</li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="title">A</div>
+        <ul class="item-list col-4">
+          <li>北京</li>
+          <li>上海</li>
+          <li>三亚</li>
+          <li>香港</li>
+          <li>杭州</li>
+          <li>广州</li>
+          <li>成都</li>
+          <li>深圳</li>
+          <li>武汉</li>
+          <li>桂林</li>
+          <li>西安</li>
+          <li>厦门</li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="title">B</div>
+        <ul class="item-list col-4">
+          <li>北京</li>
+          <li>上海</li>
+          <li>三亚</li>
+          <li>香港</li>
+          <li>杭州</li>
+          <li>广州</li>
+          <li>成都</li>
+          <li>深圳</li>
+          <li>武汉</li>
+          <li>桂林</li>
+          <li>西安</li>
+          <li>厦门</li>
+        </ul>
+      </div>
+      <div class="section">
+        <div class="title">C</div>
+        <ul class="item-list col-4">
+          <li>北京</li>
+          <li>上海</li>
+          <li>三亚</li>
+          <li>香港</li>
+          <li>杭州</li>
+          <li>广州</li>
+          <li>成都</li>
+          <li>深圳</li>
+          <li>武汉</li>
+          <li>桂林</li>
+          <li>西安</li>
+          <li>厦门</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import BScroll from 'better-scroll'
 export default {
-  name: 'CityList'
+  name: 'CityList',
+  mounted () {
+    this.scroll = new BScroll(this.$refs.wrapper)
+  }
 }
 </script>
 
 <style scoped>
+.list {
+  overflow: hidden;
+  position: absolute;
+  top: 1.46rem;
+  bottom: 0;
+  width: 100%;
+}
+
 .title {
   padding: .24rem .3rem;
   font-size: var(--small-font-size);
