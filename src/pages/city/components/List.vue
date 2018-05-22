@@ -4,100 +4,19 @@
       <div class="section">
         <div class="title">热门城市</div>
         <ul class="item-list col-3">
-          <li>北京</li>
-          <li>上海</li>
-          <li>三亚</li>
-          <li>香港</li>
-          <li>杭州</li>
-          <li>广州</li>
-          <li>成都</li>
-          <li>深圳</li>
-          <li>武汉</li>
-          <li>桂林</li>
-          <li>西安</li>
-          <li>厦门</li>
+          <li v-for="item in hotCityList" :key="item.id">{{item.name}}</li>
         </ul>
       </div>
       <div class="section">
         <div class="title">字母排序</div>
         <ul class="item-list col-6">
-          <li>A</li>
-          <li>B</li>
-          <li>C</li>
-          <li>D</li>
-          <li>E</li>
-          <li>F</li>
-          <li>G</li>
-          <li>H</li>
-          <li>I</li>
-          <li>J</li>
-          <li>K</li>
-          <li>L</li>
-          <li>M</li>
-          <li>N</li>
-          <li>O</li>
-          <li>P</li>
-          <li>Q</li>
-          <li>R</li>
-          <li>S</li>
-          <li>T</li>
-          <li>U</li>
-          <li>V</li>
-          <li>W</li>
-          <li>X</li>
-          <li>Y</li>
-          <li>Z</li>
+          <li v-for="(item, letter, index) in cities" :key="index">{{letter}}</li>
         </ul>
       </div>
-      <div class="section">
-        <div class="title">A</div>
+      <div class="section" v-for="(item, letter) in cities" :key="letter">
+        <div class="title">{{letter}}</div>
         <ul class="item-list col-4">
-          <li>北京</li>
-          <li>上海</li>
-          <li>三亚</li>
-          <li>香港</li>
-          <li>杭州</li>
-          <li>广州</li>
-          <li>成都</li>
-          <li>深圳</li>
-          <li>武汉</li>
-          <li>桂林</li>
-          <li>西安</li>
-          <li>厦门</li>
-        </ul>
-      </div>
-      <div class="section">
-        <div class="title">B</div>
-        <ul class="item-list col-4">
-          <li>北京</li>
-          <li>上海</li>
-          <li>三亚</li>
-          <li>香港</li>
-          <li>杭州</li>
-          <li>广州</li>
-          <li>成都</li>
-          <li>深圳</li>
-          <li>武汉</li>
-          <li>桂林</li>
-          <li>西安</li>
-          <li>厦门</li>
-        </ul>
-      </div>
-      <div class="section">
-        <div class="title">C</div>
-        <ul class="item-list col-4">
-          <li>北京</li>
-          <li>上海</li>
-          <li>三亚</li>
-          <li>香港</li>
-          <li>杭州</li>
-          <li>广州</li>
-          <li>成都</li>
-          <li>深圳</li>
-          <li>武汉</li>
-          <li>桂林</li>
-          <li>西安</li>
-          <li>厦门</li>
+          <li v-for="innerItem in item" :key="innerItem.id">{{innerItem.name}}</li>
         </ul>
       </div>
     </div>
@@ -106,8 +25,13 @@
 
 <script>
 import BScroll from 'better-scroll'
+
 export default {
   name: 'CityList',
+  props: {
+    hotCityList: Array,
+    cities: Object
+  },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
   }
