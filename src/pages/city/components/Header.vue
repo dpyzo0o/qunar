@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" @click="handleClick">
     城市选择
     <router-link to="/">
       <div class="iconfont back-icon">&#xe624;</div>
@@ -9,7 +9,14 @@
 
 <script>
 export default {
-  name: 'CityHeader'
+  name: 'CityHeader',
+  methods: {
+    handleClick (evt) {
+      if (evt.target.className === 'header') {
+        this.$emit('backtop')
+      }
+    }
+  }
 }
 </script>
 

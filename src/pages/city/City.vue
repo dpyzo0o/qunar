@@ -1,10 +1,11 @@
 <template>
   <div>
-    <city-header></city-header>
+    <city-header @backtop="handleBackTop"></city-header>
     <city-tab></city-tab>
     <city-list
       :hotCityList="hotCities"
       :cities="cities"
+      ref="cityList"
     >
     </city-list>
   </div>
@@ -26,7 +27,8 @@ export default {
   data () {
     return {
       hotCities: [],
-      cities: {}
+      cities: {},
+      listBackTop: ''
     }
   },
   methods: {
@@ -40,6 +42,9 @@ export default {
         this.hotCities = res.data.hotCities
         this.cities = res.data.cities
       }
+    },
+    handleBackTop () {
+      this.$refs.cityList.listBackTop()
     }
   },
   mounted () {

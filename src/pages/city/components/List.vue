@@ -1,7 +1,7 @@
 <template>
   <div class="list" ref="wrapper">
     <div>
-      <div class="section">
+      <div class="section" ref="hotCity">
         <div class="title">热门城市</div>
         <ul class="item-list col-3">
           <li
@@ -57,6 +57,9 @@ export default {
     handleLetterClick (evt) {
       let el = this.$refs[evt.target.innerText][0]
       this.scroll.scrollToElement(el)
+    },
+    listBackTop () {
+      this.scroll.scrollToElement(this.$refs.hotCity)
     }
   },
   mounted () {
