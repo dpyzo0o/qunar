@@ -7,6 +7,7 @@
           <li
             v-for="item in hotCityList"
             :key="item.id"
+            @click="handleCityClick(item.name)"
           >
             {{item.name}}
           </li>
@@ -35,6 +36,7 @@
           <li
             v-for="innerItem in item"
             :key="innerItem.id"
+            @click="handleCityClick(innerItem.name)"
           >
             {{innerItem.name}}
           </li>
@@ -57,6 +59,10 @@ export default {
     handleLetterClick (evt) {
       let el = this.$refs[evt.target.innerText][0]
       this.scroll.scrollToElement(el)
+    },
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
     },
     listBackTop () {
       this.scroll.scrollToElement(this.$refs.hotCity)
@@ -118,6 +124,7 @@ export default {
   left: 33.33%;
   border-left: .02rem solid #ddd;
   border-right: .02rem solid #ddd;
+  pointer-events: none;
 }
 
 .col-4::before {
@@ -128,6 +135,7 @@ export default {
   left: 25%;
   border-left: .02rem solid #ddd;
   border-right: .02rem solid #ddd;
+  pointer-events: none;
 }
 
 .col-4::after {
@@ -137,5 +145,6 @@ export default {
   height: 100%;
   left: 75%;
   border-left: .02rem solid #ddd;
+  pointer-events: none;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <home-header :city="city"></home-header>
+    <home-header></home-header>
     <div class="scroll-wrapper" ref="wrapper">
       <div class="content">
         <home-swiper :itemList="swiperList"></home-swiper>
@@ -32,7 +32,6 @@ export default {
   },
   data () {
     return {
-      city: '',
       swiperList: [],
       iconList: [],
       likeList: [],
@@ -47,7 +46,6 @@ export default {
     handleHomeData (res) {
       res = res.data
       if (res.ret && res.data) {
-        this.city = res.data.city
         this.swiperList = res.data.swiperList
         this.iconList = res.data.iconList
         this.likeList = res.data.likeList
