@@ -18,6 +18,7 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeLike from './components/Like'
 import HomeWeekend from './components/Weekend'
+import { mapState } from 'vuex'
 import axios from 'axios'
 import BScroll from 'better-scroll'
 
@@ -35,12 +36,16 @@ export default {
       swiperList: [],
       iconList: [],
       likeList: [],
-      weekendList: []
+      weekendList: [],
+      lastCity: ''
     }
+  },
+  computed: {
+    ...mapState(['city'])
   },
   methods: {
     fetchHomeData () {
-      axios.get('/api/index.json')
+      axios.get('/api/index.json?city=' + this.city)
         .then(this.handleHomeData)
     },
     handleHomeData (res) {
@@ -54,8 +59,15 @@ export default {
     }
   },
   mounted () {
-    this.fetchHomeData()
-    this.scroll = new BScroll(this.$refs.wrapper)
+    this.scroll = new BScroll(this.$refs.wrapper, {
+      click: true
+    })
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.fetchHomeData()
+    }
   }
 }
 </script>
