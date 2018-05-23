@@ -4,19 +4,40 @@
       <div class="section">
         <div class="title">热门城市</div>
         <ul class="item-list col-3">
-          <li v-for="item in hotCityList" :key="item.id">{{item.name}}</li>
+          <li
+            v-for="item in hotCityList"
+            :key="item.id"
+          >
+            {{item.name}}
+          </li>
         </ul>
       </div>
       <div class="section">
         <div class="title">字母排序</div>
         <ul class="item-list col-6">
-          <li v-for="(item, letter, index) in cities" :key="index">{{letter}}</li>
+          <li
+            v-for="(item, letter, index) in cities"
+            :key="index"
+            @click="handleLetterClick"
+          >
+            {{letter}}
+          </li>
         </ul>
       </div>
-      <div class="section" v-for="(item, letter) in cities" :key="letter">
+      <div
+        class="section"
+        v-for="(item, letter) in cities"
+        :key="letter"
+        :ref="letter"
+      >
         <div class="title">{{letter}}</div>
         <ul class="item-list col-4">
-          <li v-for="innerItem in item" :key="innerItem.id">{{innerItem.name}}</li>
+          <li
+            v-for="innerItem in item"
+            :key="innerItem.id"
+          >
+            {{innerItem.name}}
+          </li>
         </ul>
       </div>
     </div>
@@ -31,6 +52,12 @@ export default {
   props: {
     hotCityList: Array,
     cities: Object
+  },
+  methods: {
+    handleLetterClick (evt) {
+      let el = this.$refs[evt.target.innerText][0]
+      this.scroll.scrollToElement(el)
+    }
   },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
