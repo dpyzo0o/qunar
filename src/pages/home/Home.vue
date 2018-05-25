@@ -1,14 +1,10 @@
 <template>
   <div>
     <home-header></home-header>
-    <div class="scroll-wrapper" ref="wrapper">
-      <div class="content">
-        <home-swiper :itemList="swiperList"></home-swiper>
-        <home-icons :itemList="iconList"></home-icons>
-        <home-like :itemList="likeList"></home-like>
-        <home-weekend :itemList="weekendList"></home-weekend>
-      </div>
-    </div>
+    <home-swiper :itemList="swiperList"></home-swiper>
+    <home-icons :itemList="iconList"></home-icons>
+    <home-like :itemList="likeList"></home-like>
+    <home-weekend :itemList="weekendList"></home-weekend>
   </div>
 </template>
 
@@ -20,7 +16,6 @@ import HomeLike from './components/Like'
 import HomeWeekend from './components/Weekend'
 import { mapState } from 'vuex'
 import axios from 'axios'
-import BScroll from 'better-scroll'
 
 export default {
   name: 'Home',
@@ -58,11 +53,6 @@ export default {
       }
     }
   },
-  mounted () {
-    this.scroll = new BScroll(this.$refs.wrapper, {
-      click: true
-    })
-  },
   activated () {
     if (this.lastCity !== this.city) {
       this.lastCity = this.city
@@ -72,13 +62,4 @@ export default {
 }
 </script>
 
-<style>
-.scroll-wrapper {
-  overflow: hidden;
-  position: absolute;
-  top: .86rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-</style>
+<style scoped></style>

@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      let top = document.documentElement.scrollTop
+      let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
       let opacity = top / 160
       opacity = opacity > 1 ? 1 : opacity
       this.opacityStyle.opacity = opacity
