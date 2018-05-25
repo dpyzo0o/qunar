@@ -5,7 +5,7 @@
       <div class="banner-info">
         <div class="banner-title">故宫(AAAAA景区)</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe626;</span><em>10</em>
+          <span class="iconfont banner-icon">&#xe626;</span><em>{{images.length}}</em>
         </div>
       </div>
     </div>
