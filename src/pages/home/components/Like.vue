@@ -6,7 +6,13 @@
       <span class="title-desc">猜你喜欢</span>
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item in itemList" :key="item.id">
+      <router-link
+        tag="li"
+        class="item border-bottom"
+        v-for="item in itemList"
+        :key="item.id"
+        :to="'/detail/' + item.id"
+      >
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgURL" alt="">
         </div>
@@ -15,7 +21,7 @@
           <p class="item-desc">{{item.desc}}</p>
           <button class="item-button">查看详情</button>
         </div>
-      </li>
+      </router-link>
       <li class="item-more">查看所有商品</li>
     </ul>
   </div>
