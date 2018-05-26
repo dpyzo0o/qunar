@@ -4,9 +4,16 @@
       <span class="title-desc">周末去哪儿</span>
     </div>
     <ul>
-      <li class="item border-bottom" v-for="item in itemList" :key="item.id">
+      <li
+        class="item border-bottom"
+        v-for="item in itemList"
+        :key="item.id"
+      >
         <div class="item-img-wrapper">
-          <img class="item-img" :src="item.imgURL" alt="">
+          <img
+            class="item-img"
+            :src="item.imgURL"
+          >
         </div>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>

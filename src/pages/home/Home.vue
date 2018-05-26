@@ -1,10 +1,10 @@
 <template>
   <div>
-    <home-header></home-header>
-    <home-swiper :itemList="swiperList"></home-swiper>
-    <home-icons :itemList="iconList"></home-icons>
-    <home-like :itemList="likeList"></home-like>
-    <home-weekend :itemList="weekendList"></home-weekend>
+    <HomeHeader/>
+    <HomeSwiper :itemList="swiperList"/>
+    <HomeIcons :itemList="iconList"/>
+    <HomeLike :itemList="likeList"/>
+    <HomeWeekend :itemList="weekendList"/>
   </div>
 </template>
 
@@ -38,6 +38,12 @@ export default {
   computed: {
     ...mapState(['city'])
   },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.fetchHomeData()
+    }
+  },
   methods: {
     fetchHomeData () {
       axios.get('/api/index.json?city=' + this.city)
@@ -51,12 +57,6 @@ export default {
         this.likeList = res.data.likeList
         this.weekendList = res.data.weekendList
       }
-    }
-  },
-  activated () {
-    if (this.lastCity !== this.city) {
-      this.lastCity = this.city
-      this.fetchHomeData()
     }
   }
 }

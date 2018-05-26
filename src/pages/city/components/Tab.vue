@@ -1,8 +1,18 @@
 <template>
   <div class="tab">
     <ul>
-      <li :class="{ active: isDomestic}" @click="setRegion('domestic')">境内</li>
-      <li :class="{ active: !isDomestic}" @click="setRegion('foreign')">境外·港澳台</li>
+      <li
+        :class="{ active: isDomestic}"
+        @click="setRegion('domestic')"
+      >
+        境内
+      </li>
+      <li
+        :class="{ active: !isDomestic}"
+        @click="setRegion('foreign')"
+      >
+        境外·港澳台
+      </li>
     </ul>
   </div>
 </template>

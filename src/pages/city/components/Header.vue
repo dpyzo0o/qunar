@@ -1,5 +1,8 @@
 <template>
-  <div class="header" @click="handleClick">
+  <div
+    class="header"
+    @click="handleClick"
+  >
     城市选择
     <router-link to="/">
       <div class="iconfont back-icon">&#xe624;</div>

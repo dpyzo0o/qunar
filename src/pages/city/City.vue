@@ -1,13 +1,12 @@
 <template>
   <div>
-    <city-header @backtop="handleBackTop"></city-header>
-    <city-tab></city-tab>
-    <city-list
+    <CityHeader @backtop="handleBackTop"/>
+    <CityTab/>
+    <CityList
       :hotCityList="hotCities"
       :cities="cities"
       ref="cityList"
-    >
-    </city-list>
+    />
   </div>
 </template>
 
@@ -31,6 +30,9 @@ export default {
       listBackTop: ''
     }
   },
+  mounted () {
+    this.fetchCityData()
+  },
   methods: {
     fetchCityData () {
       axios.get('/api/city.json')
@@ -46,9 +48,6 @@ export default {
     handleBackTop () {
       this.$refs.cityList.listBackTop()
     }
-  },
-  mounted () {
-    this.fetchCityData()
   }
 }
 </script>

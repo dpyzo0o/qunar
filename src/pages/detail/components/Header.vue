@@ -1,6 +1,11 @@
 <template>
   <div>
-    <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
+    <router-link
+      tag="div"
+      to="/"
+      class="header-abs"
+      v-show="showAbs"
+    >
       <div class="iconfont header-abs-back">&#xe624;</div>
     </router-link>
     <div
@@ -27,6 +32,12 @@ export default {
       }
     }
   },
+  activated () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
   methods: {
     handleScroll () {
       let top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
@@ -35,12 +46,6 @@ export default {
       this.opacityStyle.opacity = opacity
       this.showAbs = !(top > 5)
     }
-  },
-  activated () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  deactivated () {
-    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>

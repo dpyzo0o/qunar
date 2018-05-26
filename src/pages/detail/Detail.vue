@@ -1,7 +1,7 @@
 <template>
   <div>
-    <detail-banner></detail-banner>
-    <detail-header></detail-header>
+    <DetailBanner/>
+    <DetailHeader/>
     <div class="content"></div>
   </div>
 </template>

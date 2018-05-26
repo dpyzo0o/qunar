@@ -1,7 +1,13 @@
 <template>
-  <div class="list" ref="wrapper">
+  <div
+    class="list"
+    ref="wrapper"
+  >
     <div>
-      <div class="section" ref="hotCity">
+      <div
+        class="section"
+        ref="hotCity"
+      >
         <div class="title">热门城市</div>
         <ul class="item-list col-3">
           <li
@@ -56,6 +62,11 @@ export default {
     hotCityList: Array,
     cities: Object
   },
+  mounted () {
+    this.scroll = new BScroll(this.$refs.wrapper, {
+      click: true
+    })
+  },
   methods: {
     handleLetterClick (evt) {
       let el = this.$refs[evt.target.innerText][0]
@@ -69,11 +80,6 @@ export default {
       this.scroll.scrollToElement(this.$refs.hotCity)
     },
     ...mapMutations(['changeCity'])
-  },
-  mounted () {
-    this.scroll = new BScroll(this.$refs.wrapper, {
-      click: true
-    })
   }
 }
 </script>

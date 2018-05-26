@@ -2,19 +2,25 @@
   <div>
     <div class="gap"></div>
     <div class="title">
-      <img class="title-img" src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="">
+      <img
+        class="title-img"
+        src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png"
+      >
       <span class="title-desc">猜你喜欢</span>
     </div>
     <ul>
       <router-link
         tag="li"
+        :to="'/detail/' + item.id"
         class="item border-bottom"
         v-for="item in itemList"
         :key="item.id"
-        :to="'/detail/' + item.id"
       >
         <div class="item-img-wrapper">
-          <img class="item-img" :src="item.imgURL" alt="">
+          <img
+            class="item-img"
+            :src="item.imgURL"
+          >
         </div>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
